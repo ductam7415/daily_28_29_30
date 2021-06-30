@@ -5,10 +5,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "Entity_email")
+@Entity(tableName = "email")
 data class Email(
     @PrimaryKey(autoGenerate = true)
-    var EntityEamilId: Int,
+    var EntityEmailId: Int,
 
     @ColumnInfo(name = "title")
     var title : String ,
@@ -18,5 +18,5 @@ data class Email(
 
     @ColumnInfo(name = "senderEmail")
     var senderEmail: String
-    
+
 )
