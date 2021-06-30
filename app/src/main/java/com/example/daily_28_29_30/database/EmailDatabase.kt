@@ -28,6 +28,7 @@ abstract class EmailDatabase() : RoomDatabase() {
                         .fallbackToDestructiveMigration()
                         .build()
                     INSTANCE = instance
+                    
                 }
                 return instance
             }
